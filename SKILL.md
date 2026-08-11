@@ -11,10 +11,15 @@ description: 分析代码仓，生成安全测试所需知识库（目录树）
 
 ```
 _security-knowledge/
-├── README.md            # 总览：技术栈、覆盖情况、测试者速览
-└── <topic>/             # 主题目录，如 auth、sandbox、gateway
-    ├── README.md        # 主题结论
-    └── <scope>.md       # 拆分文件
+├── README.md            # 总览
+├── auth/
+│   ├── README.md        # 主题结论
+│   └── jwt.md           # 拆分文件
+├── gateway/
+│   ├── README.md
+│   └── routing.md
+└── sandbox/
+    └── README.md
 ```
 
 目录层级不预设固定结构，依据仓库实际情况决定。
